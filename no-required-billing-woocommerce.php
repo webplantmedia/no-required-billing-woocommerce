@@ -4,7 +4,7 @@ Plugin Name: No Required Billing WooCommerce
 Description: No Required Billing WooCommerce
 Author: Chris Baldelomar
 Author URI: http://webplantmedia.com/
-Version: 1.0
+Version: 1.1
 License: GPLv2 or later
 */
 
@@ -14,8 +14,8 @@ function nrbw_woocommerce_checkout_fields( $checkout_fields ) {
 		if ( 'billing' == $k ) {
 			foreach ( $form as $kk => $field ) {
 				switch ( $kk ) {
-					case 'billing_first_name' :
-					case 'billing_last_name' :
+					// case 'billing_first_name' :
+					// case 'billing_last_name' :
 					case 'billing_email' :
 						// nothing
 						break;
